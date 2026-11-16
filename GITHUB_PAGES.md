@@ -1,27 +1,24 @@
 # Публикация TUR11 через GitHub Pages
 
-В проект уже добавлен workflow `.github/workflows/deploy-pages.yml`. Он публикует сайт при каждом `push` в ветку `main`.
+В проект добавлен workflow `.github/workflows/deploy-pages.yml`. Он публикует сайт при каждом `push` в ветку `main`.
 
-## Первый запуск
+Сайт уже опубликован: `https://whylegend.github.io/tur11-landing/`.
 
-1. На GitHub создайте **пустой публичный** репозиторий, например `tur11-landing`. Не добавляйте README, `.gitignore` или лицензию на сайте GitHub: они уже есть локально.
-2. В репозитории откройте **Settings → Pages** и в поле **Build and deployment → Source** выберите **GitHub Actions**.
-3. Передайте мне HTTPS-адрес нового репозитория, например `https://github.com/<ваш-аккаунт>/tur11-landing.git`, либо войдите в GitHub на этом компьютере. После этого можно будет отправить текущий проект в репозиторий.
-4. После первого push откройте вкладку **Actions** и дождитесь успешного workflow `Deploy TUR11 to GitHub Pages`.
+## Настройка выполнена
+
+- Репозиторий: `https://github.com/whylegend/tur11-landing`.
+- Источник GitHub Pages: GitHub Actions.
+- Workflow `Deploy TUR11 to GitHub Pages`: успешно выполнен 16 ноября 2026 года.
 
 ## Адрес политики
 
-Если репозиторий называется `tur11-landing`, его адрес будет таким:
+Постоянный адрес политики:
 
 ```text
-https://<ваш-аккаунт>.github.io/tur11-landing/privacy.html
+https://whylegend.github.io/tur11-landing/privacy.html
 ```
 
-Именно этот постоянный URL используйте в RuStore. Если репозиторий будет называться `<ваш-аккаунт>.github.io`, адрес политики будет короче:
-
-```text
-https://<ваш-аккаунт>.github.io/privacy.html
-```
+Именно этот постоянный URL используйте в RuStore.
 
 ## Состав публикации
 

@@ -12,7 +12,7 @@
 
 ## Политика конфиденциальности
 
-Страница `privacy.html` должна быть опубликована вместе с лендингом. Для GitHub Pages используйте постоянный адрес вида `https://<ваш-аккаунт>.github.io/<репозиторий>/privacy.html` в карточке TUR11 в RuStore. Подробные шаги — в `GITHUB_PAGES.md`.
+Страница `privacy.html` опубликована через GitHub Pages: `https://whylegend.github.io/tur11-landing/privacy.html`. Этот постоянный адрес используйте в карточке TUR11 в RuStore. Подробные шаги — в `GITHUB_PAGES.md`.
 
 ## Временный предпросмотр
 
