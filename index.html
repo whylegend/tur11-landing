@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TUR11 — фэнтези-менеджер: собери состав, выбери капитана и сыграй дуэль с ИИ." />
+    <meta name="theme-color" content="#0e4637" />
+    <meta name="color-scheme" content="light" />
+    <title>TUR11 — matchday journal</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <div class="shell header__inner">
+        <a class="brand" href="#top" aria-label="TUR11 — на главную">
+          <span class="brand-mark" aria-hidden="true"><b>T</b><i>11</i></span>
+          <span class="brand-copy"><strong>TUR11</strong><small>matchday journal</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Навигация по странице">
+          <a href="#how">Как это работает</a>
+          <a href="#game">Играть в браузере</a>
+          <a href="#app">Приложение</a>
+        </nav>
+        <a class="header-cta" href="#game">Играть <span aria-hidden="true">↘</span></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="shell hero__grid">
+          <div class="hero__copy reveal">
+            <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Фэнтези-менеджер нового тура</p>
+            <h1>Собери <em>11.</em><br />Обыграй<br />тактику.</h1>
+            <p class="hero__lead">TUR11 превращает матчдей в короткий тренерский ритуал: состав, капитан, дуэль с ИИ. Без ставок и денежных призов.</p>
+            <div class="hero__actions">
+              <a class="button button--dark" href="#game">Играть в браузере <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="#how">Как работает игра <span aria-hidden="true">↓</span></a>
+            </div>
+            <ul class="hero__notes">
+              <li><span>01</span> Виртуальные очки</li>
+              <li><span>02</span> ИИ-соперник</li>
+              <li><span>03</span> Один ход в день</li>
+            </ul>
+          </div>
+
+          <div class="hero__visual reveal" aria-label="Пример игрового поля TUR11">
+            <div class="match-card">
+              <div class="match-card__top"><span>МАТЧДЕЙ / 024</span><span class="live"><i></i> тур открыт</span></div>
+              <div class="pitch pitch--hero">
+                <span class="pitch-line pitch-line--half"></span>
+                <span class="pitch-circle"></span>
+                <span class="player-dot player-dot--gk" data-dot="belov">Б</span>
+                <span class="player-dot player-dot--d1">О</span>
+                <span class="player-dot player-dot--d2">В</span>
+                <span class="player-dot player-dot--d3">Г</span>
+                <span class="player-dot player-dot--m1">С</span>
+                <span class="player-dot player-dot--m2">Л</span>
+                <span class="player-dot player-dot--m3">К</span>
+                <span class="player-dot player-dot--m4">Ж</span>
+                <span class="player-dot player-dot--f1 is-captain">В<small>×2</small></span>
+                <span class="player-dot player-dot--f2">М</span>
+                <span class="player-dot player-dot--f3">Ф</span>
+              </div>
+              <div class="match-card__bottom"><span>ТВОЙ КЛУБ</span><strong>VS</strong><span>ТАКТИК / ИИ</span></div>
+            </div>
+            <div class="hero-sticker hero-sticker--one">×2<br /><small>капитан</small></div>
+            <div class="hero-sticker hero-sticker--two"><span>11</span><br />решений<br />в составе</div>
+          </div>
+        </div>
+        <div class="ticker" aria-hidden="true"><div>СОСТАВ&nbsp; · &nbsp;КАПИТАН&nbsp; · &nbsp;ДУЭЛЬ&nbsp; · &nbsp;СОСТАВ&nbsp; · &nbsp;КАПИТАН&nbsp; · &nbsp;ДУЭЛЬ&nbsp; · &nbsp;СОСТАВ&nbsp; · &nbsp;КАПИТАН&nbsp; · &nbsp;ДУЭЛЬ&nbsp; · &nbsp;</div></div>
+      </section>
+
+      <section class="section section--how" id="how">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span>01</span> Игровой цикл</p>
+            <h2>Один тур.<br /><em>Три шага.</em></h2>
+            <p>Никаких сложных таблиц. Каждый матчдей начинается с ясного плана и заканчивается дуэлью против виртуального тренера.</p>
+          </div>
+          <div class="steps">
+            <article class="step reveal">
+              <span class="step__number">01</span>
+              <div class="step__icon step__icon--lineup" aria-hidden="true"><i></i><i></i><i></i></div>
+              <h3>Собери 11</h3>
+              <p>Стартовый состав уже готов. Замени игрока на той же позиции, если видишь вариант сильнее.</p>
+              <span class="step__tag">Бюджет 100 млн</span>
+            </article>
+            <article class="step reveal">
+              <span class="step__number">02</span>
+              <div class="step__icon step__icon--captain" aria-hidden="true">C<span>×2</span></div>
+              <h3>Выбери капитана</h3>
+              <p>Один игрок получает множитель. Это главный риск и главная возможность твоего тура.</p>
+              <span class="step__tag">Решение дня</span>
+            </article>
+            <article class="step reveal">
+              <span class="step__number">03</span>
+              <div class="step__icon step__icon--duel" aria-hidden="true">VS</div>
+              <h3>Сыграй дуэль</h3>
+              <p>ИИ «Тактик» выставляет свою виртуальную 11‑ку. Очки фиксируются только раз за день.</p>
+              <span class="step__tag">Новый шанс завтра</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--playbook game-section" id="game" data-browser-game>
+        <div class="shell">
+          <div class="game-section__heading reveal">
+            <div>
+              <p class="eyebrow eyebrow--light"><span>02</span> Полная веб-версия</p>
+              <h2>Твой клуб.<br /><em>В браузере.</em></h2>
+            </div>
+            <p>Это не демо: собирай состав, назначай капитана, проводи трансферы и играй ежедневную дуэль с ИИ прямо на сайте.</p>
+          </div>
+
+          <div class="browser-game reveal" data-game-root>
+            <div class="browser-game__status" data-game-status></div>
+            <div class="browser-game__body">
+              <div class="game-field" data-game-field aria-label="Тактическое поле"></div>
+              <div class="game-console">
+                <div class="game-tabs" role="tablist" aria-label="Разделы игры">
+                  <button class="is-active" type="button" data-game-tab="lineup">Состав</button>
+                  <button type="button" data-game-tab="transfers">Трансферы</button>
+                  <button type="button" data-game-tab="duel">Дуэль</button>
+                </div>
+                <div class="game-console__panel" data-game-panel aria-live="polite"></div>
+              </div>
+            </div>
+            <div class="browser-game__footer"><span>Прогресс хранится только в этом браузере. Сайт и приложение играют независимо.</span><button type="button" data-game-reset hidden>Начать заново</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--app" id="app">
+        <div class="shell app-section">
+          <div class="phone-wrap reveal" aria-label="Экран приложения TUR11">
+            <div class="phone">
+              <div class="phone__top"><span>TUR11</span><b>148</b></div>
+              <div class="phone__title">Сегодня<br /><em>матчдей</em></div>
+              <div class="phone__field">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <div class="phone__duel"><small>ДУЭЛЬ С ИИ</small><strong>Твой клуб <i>VS</i> Тактик</strong><button>ИГРАТЬ</button></div>
+              <div class="phone__nav"><span class="active">⌂<small>Тур</small></span><span>◎<small>Состав</small></span><span>VS<small>Дуэль</small></span><span>18+<small>Ещё</small></span></div>
+            </div>
+          </div>
+          <div class="app-section__copy reveal">
+            <p class="eyebrow"><span>03</span> Мобильный формат</p>
+            <h2>Твой матчдей<br />в <em>кармане.</em></h2>
+            <p>Проверяй расстановку за минуту, меняй капитана в один тап и открывай результат, когда готов. Это отдельная версия: прогресс APK хранится на телефоне и не синхронизируется с сайтом.</p>
+            <ul class="feature-list">
+              <li><span>✓</span> Тактическое поле вместо сложных таблиц</li>
+              <li><span>✓</span> Трансферы только по позиции и бюджету</li>
+              <li><span>✓</span> Дуэль с ИИ раз в день</li>
+            </ul>
+            <a class="button button--coral" href="downloads/tur11-0.4.0-android.apk" download>Скачать Android APK <span aria-hidden="true">↓</span></a>
+            <p class="download-note">Тестовая Android-сборка · версия 0.4.0</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--partners" id="partners">
+        <div class="shell partners__grid">
+          <div class="partners__heading reveal">
+            <p class="eyebrow"><span class="age-badge">18+</span> отдельный раздел</p>
+            <h2>Партнёры —<br /><em>отдельно.</em></h2>
+            <p>Игровая часть TUR11 не зависит от переходов. Внешние ссылки всегда явно помечены как партнёрские материалы и доступны только после подтверждения возраста.</p>
+            <button class="button button--outline" type="button" data-open-partners>Открыть витрину 18+ <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="partners__rules reveal">
+            <div><span>01</span><p><b>Только 18+</b><br />Доступ к внешним материалам — после отдельного подтверждения возраста.</p></div>
+            <div><span>02</span><p><b>Без маскировки</b><br />Перед переходом показывается предупреждение о внешнем сайте и рисках.</p></div>
+            <div><span>03</span><p><b>Без привязки к игре</b><br />Очки, состав и доступ к функциям не зависят от кликов или регистраций.</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer__top">
+        <a class="brand brand--footer" href="#top" aria-label="TUR11 — на главную"><span class="brand-mark" aria-hidden="true"><b>T</b><i>11</i></span><span class="brand-copy"><strong>TUR11</strong><small>matchday journal</small></span></a>
+        <p>TUR11 — фэнтези-менеджер с виртуальными очками. Не является организатором азартных игр и не принимает ставки.</p>
+        <span class="footer__age">18+</span>
+      </div>
+      <div class="shell footer__bottom"><span>© <span data-year></span> TUR11</span><a href="privacy.html">Конфиденциальность</a><span>Партнёрские материалы · 18+ · игра не зависит от переходов.</span></div>
+    </footer>
+
+    <dialog class="modal" data-partners-dialog aria-labelledby="partners-title">
+      <form method="dialog" class="modal__box">
+        <button class="modal__close" value="cancel" aria-label="Закрыть">×</button>
+        <p class="eyebrow"><span class="age-badge">18+</span> внешние ресурсы</p>
+        <h2 id="partners-title">Перед переходом</h2>
+        <p>Раздел содержит партнёрские материалы и может вести на внешние сайты. TUR11 не принимает ставки, не обрабатывает платежи и не влияет на условия на сайтах партнёров.</p>
+        <label class="age-check"><input type="checkbox" data-partners-age /> <span>Мне исполнилось 18 лет, я понимаю, что азартные игры связаны с риском финансовых потерь.</span></label>
+        <button class="button button--dark" value="default" type="button" data-enter-showcase disabled>Продолжить</button>
+      </form>
+    </dialog>
+
+    <dialog class="modal" data-showcase-dialog aria-labelledby="showcase-title">
+      <form method="dialog" class="modal__box modal__box--wide">
+        <button class="modal__close" value="cancel" aria-label="Закрыть">×</button>
+        <p class="eyebrow"><span class="age-badge">18+</span> реклама / партнёрский материал</p>
+        <h2 id="showcase-title">Витрина партнёров</h2>
+        <p>Ниже указаны внешние сайты партнёров. Условия участия и обработки данных уточняйте непосредственно на официальных сайтах.</p>
+        <div class="offer-grid">
+          <article class="offer">
+            <p class="offer__name">Winline</p>
+            <p class="offer__status">Реклама. 18+</p>
+            <a class="offer__link" href="https://winline.ru" target="_blank" rel="noopener noreferrer sponsored">Открыть сайт ↗</a>
+          </article>
+          <article class="offer">
+            <p class="offer__name">BetBoom</p>
+            <p class="offer__status">Реклама. 18+</p>
+            <a class="offer__link" href="https://betboom.ru" target="_blank" rel="noopener noreferrer sponsored">Открыть сайт ↗</a>
+          </article>
+          <article class="offer">
+            <p class="offer__name">PARI</p>
+            <p class="offer__status">Реклама. 18+</p>
+            <a class="offer__link" href="https://pari.ru" target="_blank" rel="noopener noreferrer sponsored">Открыть сайт ↗</a>
+          </article>
+          <article class="offer">
+            <p class="offer__name">Fonbet</p>
+            <p class="offer__status">Реклама. 18+</p>
+            <a class="offer__link" href="https://fonbet.ru" target="_blank" rel="noopener noreferrer sponsored">Открыть сайт ↗</a>
+          </article>
+        </div>
+        <p class="modal__note">Азартные игры могут привести к финансовым потерям. Только для совершеннолетних.</p>
+      </form>
+    </dialog>
+
+    <noscript><p class="noscript">Для анимаций и интерактива включите JavaScript.</p></noscript>
+    <script src="script.js"></script>
+  </body>
+</html>
